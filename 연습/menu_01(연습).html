@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .lnb {}
+
+        .lnb li {
+            width: 200px;
+            height: 50;
+            float: left;
+        }
+
+        .lnb li a {
+            display: block;
+            background-color: black;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .lnb ul ul {
+            height: 0;
+            overflow: hidden;
+            transition: all 0.2s 0.1s;
+        }
+
+        .lnb ul:hover ul {
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="lnb">
+        <ul>
+            <li><a href="#">menu01</a>
+                <ul>
+                    <li><a href="#">menu01-1</a></li>
+                    <li><a href="#">menu01-2</a></li>
+                    <li><a href="#">menu01-3</a></li>
+                    <li><a href="#">menu01-4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">menu02</a>
+                <ul>
+                    <li><a href="#">menu02-1</a></li>
+                    <li><a href="#">menu02-2</a></li>
+                    <li><a href="#">menu02-3</a></li>
+                    <li><a href="#">menu02-4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">menu03</a>
+                <ul>
+                    <li><a href="#">menu03-1</a></li>
+                    <li><a href="#">menu03-2</a></li>
+                    <li><a href="#">menu03-3</a></li>
+                    <li><a href="#">menu03-4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">menu04</a>
+                <ul>
+                    <li><a href="#">menu04-1</a></li>
+                    <li><a href="#">menu04-2</a></li>
+                    <li><a href="#">menu04-3</a></li>
+                    <li><a href="#">menu04-4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">menu05</a>
+                <ul>
+                    <li><a href="#">menu05-1</a></li>
+                    <li><a href="#">menu05-2</a></li>
+                    <li><a href="#">menu05-3</a></li>
+                    <li><a href="#">menu05-4</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>

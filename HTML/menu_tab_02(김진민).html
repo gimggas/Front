@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            margin: 0 auto;
+            width: 1200px;
+            display: flex;
+        }
+
+
+
+
+        .box01 {
+            height: 300px;
+        }
+
+        .box01 .box01_1 {
+            line-height: 300px;
+        }
+
+
+        #tab01,
+        #tab02,
+        #tab03,
+        #tab04,
+        #tab05 {
+            display: none;
+        }
+
+        #tab01:checked~.sheet .sheet01 {
+            display: block;
+        }
+
+        #tab02:checked~.sheet .sheet02 {
+            display: block;
+        }
+
+        #tab03:checked~.sheet .sheet03 {
+            display: block;
+        }
+
+        #tab04:checked~.sheet .sheet04 {
+            display: block;
+        }
+
+        #tab05:checked~.sheet .sheet05 {
+            display: block;
+        }
+
+        .label {}
+
+        .label label {
+            display: block;
+            background: #ddd;
+            color: white;
+            width: 300px;
+            height: 103px;
+            border: 1px solid yellow;
+            text-align: center;
+            line-height: 103px;
+        }
+
+        .sheet div {
+            display: none;
+            overflow: hidden;
+        }
+
+        .sheet img {
+            max-height: 524px;
+            width: 120%;
+            height: 120%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="box01">
+        <div class="box01_1">
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, labore. </h3>
+        </div>
+    </section>
+
+    <section>
+        <input type="radio" id="tab01" name="radio" checked>
+        <input type="radio" id="tab02" name="radio">
+        <input type="radio" id="tab03" name="radio">
+        <input type="radio" id="tab04" name="radio">
+        <input type="radio" id="tab05" name="radio">
+        <div class="label">
+            <label for="tab01" class="lab01">런던</label>
+            <label for="tab02" class="lab02">하와이</label>
+            <label for="tab03" class="lab03">일본</label>
+            <label for="tab04" class="lab04">포르투갈</label>
+            <label for="tab05" class="lab05">스위스</label>
+        </div>
+        <div class="sheet">
+            <div class="sheet01">
+                <img src="../img/london.jpg" alt="">
+            </div>
+            <div class="sheet02">
+                <img src="../img/hawaii.jpg" alt="">
+            </div>
+            <div class="sheet03">
+                <img src="../img/japan.jpg" alt="">
+            </div>
+            <div class="sheet04">
+                <img src="../img/Portugal.jpg" alt="">
+            </div>
+            <div class="sheet05">
+                <img src="../img/swiss.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+
+</body>
+
+</html>
