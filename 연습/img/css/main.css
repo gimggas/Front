@@ -1,0 +1,92 @@
+/* 디폴트 세팅값 */
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+img {
+  display: black;
+}
+/* 디폴트 세팅값 */
+
+/* ------------header------------ */
+.outerHeader {
+  width: 100%;
+}
+
+.innerHeader {
+  width: 1030px;
+  margin: 0 auto;
+}
+
+.innerHeader .navBox {
+  width: 100%;
+  overflow: hidden;
+  /* float:left로 옆에 간걸 막아줌 */
+}
+
+.innerHeader .navBox .bland {
+  float: left;
+}
+
+.innerHeader .navBox .gnb {
+  float: right;
+}
+
+.innerHeader .navBox .gnb ul {
+  font-size: 0;
+}
+
+.innerHeader .navBox .gnb li {
+  display: inline-block;
+  font-size: 11px;
+  border-right: 1px solid black;
+  padding: 0 8px;
+  line-height: 9px; /* 선높이 */
+}
+
+.innerHeader .navBox li:last-child {
+  border: none;
+}
+
+.innerHeader .logoBox {
+  width: 100%;
+  margin: 20px 0;
+  position: relative;
+}
+
+.innerHeader .logoBox .logo {
+  width: 200px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.innerHeader .logoBox .search {
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+
+.lnbBox {
+  width: 100%;
+  height: 30px;
+  background-color: #1d2d51;
+}
+
+.lnbBox .lnb {
+  width: 1030px;
+  margin: 0 auto;
+}
+
+.lnbBox .lnb li {
+  display: inline-block;
+  color: white;
+  line-height: 30px;
+  padding: 0 25px;
+}

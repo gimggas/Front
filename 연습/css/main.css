@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.outerHeader {
+  width: 100%;
+}
+
+.innerHeader {
+  margin: 0 auto;
+  width: 1030px;
+}
+
+.innerHeader .navBox {
+  width: 100%;
+  overflow: hidden;
+}
+
+.innerHeader .navBox .bland {
+  float: left;
+}
+
+.innerHeader .navBox .gnb {
+  float: right;
+}
+
+.innerHeader .navBox .gnb li {
+  display: inline-block;
+  border-right: 1px solid black;
+  padding: 0 8px;
+  line-height: 10px;
+  font-size: 11px;
+}
+
+.innerHeader .navBox .gnb li:last-child {
+  border: none;
+}
+
+.logoBox {
+  width: 100%;
+  position: relative;
+}
+
+.logoBox .logo {
+  margin: 0 auto;
+  width: 200px;
+  height: 70px;
+}
+
+.logoBox .search {
+  position: absolute;
+  right: 0;
+}
