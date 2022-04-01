@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            margin: 50px 0;
+        }
+
+        div {
+            background-color: yellow;
+            width: 300px;
+            height: 200px;
+        }
+
+        span {
+            background-color: yellow;
+            width: 300px;
+            height: 200px;
+            /* display: block; 박스 속성*/
+            display: inline-block;
+            /* 헤더메뉴,   gnb, lnb 글자수 다를때 사용
+            레이아웃,컨텐츠 사용X*/
+        }
+
+        .label {
+            width: 350px;
+            font-size: 0;
+            /* 부모태그에 font-size를 0로해서 inline-block으로 생기는 자간을 없앰 */
+        }
+
+        .label label {
+            width: 100px;
+            height: 50px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            display: inline-block;
+            /* 1. float랑 같이 쓰면 안됨
+               2. float역할을 함
+               3. float이 가진 속성으로 인해 생기는 오류를 해결하기 위해 사용하는 태그
+               4, 글자 속성 - > font-size로 조절*/
+            text-align: center;
+            line-height: 50px;
+            font-size: 16px;
+            /* 자신속성에  font-size 조절*/
+        }
+
+
+
+
+        /* 1. 많이 안씀
+        2. a를 사용했을 경우 사용
+        3. 글자수가 달라서 */
+        a {
+            text-decoration: none;
+            color: black;
+            /* display: block; */
+        }
+
+        .gnb {
+            width: 500px;
+        }
+
+        .gnb li {
+            float: left;
+            padding: 20px;
+        }
+
+        /* 많이 안씀 */
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <div>box01</div>
+        <div>box02</div>
+        <div>box03</div>
+    </section>
+
+    <section>
+        <span>span01</span>
+        <span>span02</span>
+        <span>span03</span>
+    </section>
+
+    <div class="label">
+        <!-- inline 태그 -->
+        <label class="lab01">label01</label>
+        <label class="lab02">label02</label>
+        <label class="lab03">label03</label>
+    </div>
+
+    <div class="gnb">
+        <ul>
+            <ul>
+                <li><a href="#">login</a></li>
+                <li><a href="#">join</a></li>
+                <li><a href="#">site_map</a></li>
+                <li><a href="#">search</a></li>
+            </ul>
+        </ul>
+    </div>
+
+</body>
+
+</html>
