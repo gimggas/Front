@@ -36,6 +36,10 @@ img {
   float: left;
 }
 
+
+
+
+
 .innerHeader .navBox .gnb {
   float: right;
 }
@@ -51,6 +55,10 @@ img {
   padding: 0 8px;
   line-height: 9px; /* 선높이 */
 }
+
+
+
+
 
 .innerHeader .navBox li:last-child {
   border: none;
