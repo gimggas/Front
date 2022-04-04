@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+
+        .box01 {
+            background: url(../img/hawaii.jpg);
+            transition: background 0.2s;
+            /* all 0.2s 0.3s */
+        }
+
+        .box01:hover {
+            background: url(./img/img_on.jpg);
+        }
+
+
+
+        .box02 {
+            background: url(../img/hawaii.jpg);
+            position: relative;
+        }
+
+        .box02-1 {
+            border: 0;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: all 0.2s;
+        }
+
+        .box02:hover .box02-1 {
+            opacity: 0.5;
+        }
+
+
+
+        .box03 {
+            background-color: yellow;
+            transition: background-color 0.2s;
+            /* transiton : 부모요소에 넣기 */
+        }
+
+        .box03:hover {
+            background-color: red;
+        }
+
+
+
+        .box04 {
+            height: 200px;
+            transition: height 0.2s 0.2s;
+        }
+
+        .box04:hover {
+            height: 400px;
+        }
+
+
+        .box05 {
+            transition: all 0.2s;
+        }
+
+        .box05:hover {
+            transform: translateY(-20px);
+            /* (-) : 위쪽 */
+        }
+
+
+
+        .box06 {
+            background-color: yellow;
+            /* transition: all 0.2s; */
+            transition: border-radius 0.2s, background-color 0.2s 0.3s;
+            /* 시간차 */
+        }
+
+        .box06:hover {
+            background-color: red;
+            border-radius: 100px;
+        }
+
+        .box07,
+        .box08 {
+            overflow: hidden;
+        }
+
+        .box07 img,
+        .box08 img {
+            /* background: url(../img/hawaii.jpg); */
+            transition: all 0.2s;
+        }
+
+        .box07:hover img {
+            width: 220px;
+            height: 220px;
+        }
+
+        .box08:hover img {
+            transform: scale(1.2);
+        }
+
+
+        .box09 {
+            background: url(./img/img_on.jpg);
+            transition: all 0.2s;
+        }
+
+        .box09:hover {
+            background: url(./img/img_on.jpg);
+            transform: rotateY(180deg);
+        }
+
+        .box10 {
+            background: url(./img/img_on.jpg);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .box10-1 {
+            border: none;
+            margin: 0;
+            background-color: red;
+            color: rgba(255, 255, 255, 0);
+            position: absolute;
+            left: 0;
+            bottom: -200px;
+            transition: bottom 0.2s, color 0.2s 0.3s;
+        }
+
+        .box10:hover .box10-1 {
+            bottom: 0;
+            color: rgba(255, 255, 255, 1);
+        }
+
+
+
+        .box11 {
+            background: url(./img/img_on.jpg);
+            position: relative;
+            /* overflow: hidden; */
+
+        }
+
+        .box11 div {
+            border: none;
+            margin: 0;
+        }
+
+        .box11 .box11-1 {
+            background-color: blue;
+            position: absolute;
+            left: 0;
+            bottom: -200px;
+            transition: all 0.2s;
+        }
+
+        .box11 .box11-2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            line-height: 200px;
+            position: absolute;
+            right: 200px;
+            top: 0;
+            transition: all 0.2s 0.3s;
+        }
+
+        .box11:hover .box11-1 {
+            bottom: 0;
+        }
+
+        .box11:hover .box11-2 {}
+    </style>
+</head>
+
+<body>
+
+    <div class="box01">box01</div>
+    <div class="box02">box02
+        <div class="box02-1"></div>
+    </div>
+
+    <div class="box03">box03</div>
+    <div class="box04">box04</div>
+    <div class="box05">box05</div>
+    <div class="box06">box06</div>
+    <div class="box07">
+        <img src="./img/img_on.jpg" alt="">
+    </div>
+    <div class="box08">
+        <img src="./img/img_on.jpg" alt="">
+    </div>
+    <div class="box09">box09</div>
+    </div>
+
+    <div class="box10">
+        <div class="box10-1">box10</div>
+    </div>
+
+    <div class="box11">
+        <div class="box11-1">box11</div>
+        <div class="box12-1">box12</div>
+    </div>
+
+</body>
+
+</html>
