@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-image: url(./img/img_on.jpg);
+            float: left;
+            margin-right: 10px;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .box .subBox {
+            width: 200px;
+            height: 0px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: rgba(255, 255, 255, 0);
+            text-align: center;
+            line-height: 200px;
+            font-size: 28px;
+            /* position: absolute;
+            left: 0;
+            bottom: 0; */
+            transition: height 0.2s, color 0.2s 0.3s;
+        }
+
+        .box:hover .subBox {
+            height: 200px;
+            color: rgba(255, 255, 255, 1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box01 box">
+        <!-- 공통클래스 box -->
+        <div class="box01-1 subBox">
+            box01
+        </div>
+    </div>
+    <div class="box02 box">
+        <div class="box02-1 subBox">
+            box02
+        </div>
+    </div>
+    <div class="box03 box">
+        <div class="box03-1 subBox">
+            box03
+        </div>
+    </div>
+    <div class="box04 box">
+        <div class="box04-1 subBox">
+            box04
+        </div>
+    </div>
+    <div class="box05 box">
+        <div class="box05-1 subBox">
+            box05
+        </div>
+    </div>
+
+</body>
+
+</html>

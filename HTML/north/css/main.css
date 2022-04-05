@@ -104,7 +104,7 @@ a {
 /* --------------------wrap------------------------ */
 .wrap {
   width: 100%;
-  height: 3500px;
+  height: 3000px;
   /* background-image: url(../img/bg_img.jpg) repeat-x; */
   background-image: url(../img/bg_img.jpg);
   background-repeat: repeat-x;
@@ -216,151 +216,162 @@ a {
   bottom: 50px;
   right: 50px;
 }
+/* -------------------btntop------------------------------- */
+
+/* -------------------------------------------eventMain-------- */
 
 .contents {
-  height: 1500px;
+  width: 100%;
+}
+
+.eventMain {
+  width: 1250px;
+  height: 1220px;
   margin: 0 auto;
-  width: 1060px;
-  position: relative;
 }
 
-.contents .button_left {
+.eventMain .float {
+  float: left;
+}
+
+.eventMain .button {
+  width: 95px;
+  height: 135px;
+  background-color: blue;
+  margin: 510px 0;
+}
+
+.content_left {
+  width: 95px;
+  height: 1160px;
+}
+
+.content_center {
+  width: 1060px;
+  height: 1160px;
+}
+
+.content-01 {
+  width: 1060px;
+  height: 580px;
+  background-color: green;
+}
+
+.content-01 > div {
+  width: 530px;
+  height: 580px;
+  background-color: blue;
+  float: left;
+}
+
+.content-01 .content-012 > div {
+  width: 530px;
+  height: 290px;
+  background-color: black;
+}
+
+.content-01 .content-012 > div div {
+  width: 265px;
+  height: 290px;
+  background-color: green;
+  float: left;
+}
+
+.content-02 {
+  width: 1060px;
+  height: 580px;
+}
+
+.content-02 > div {
+  width: 530px;
+  height: 580px;
+  float: left;
+}
+
+.content-02 .content-021 > div {
+  width: 530px;
+  height: 290px;
+}
+
+.content-02 .content-021 > div div {
+  width: 265px;
+  height: 290px;
+  float: left;
+}
+
+.content_right {
+  width: 95px;
+  height: 1160px;
+}
+
+/* -------------------------------------------eventMain-------- */
+
+/* -------------------------------rollingVisual----------------------------- */
+
+.rolling_visual {
+  width: 1250px;
+  height: 443px;
+  margin: 0 auto;
+}
+
+.rolling_visual .float {
+  float: left;
+}
+
+.rolling_visual .button {
   width: 95px;
   height: 135px;
   background-color: yellow;
-  position: absolute;
-  top: 510px;
-  left: -100px;
+  margin: 125px 0;
 }
 
-.contents_top {
-}
-
-.contents-1 {
-  width: 1060px;
-  height: 580px;
-}
-
-.contents-1 .contents-01 {
-  width: 530px;
-  height: 580px;
-  float: left;
-}
-.contents-1 .contents-02 {
-  width: 530px;
-  height: 580px;
-  background-color: #ddd;
-  float: right;
-}
-
-.contents-1 .contents-02 .contents-02-1 {
-  width: 265px;
-  height: 290px;
-  background-color: yellow;
-  float: left;
-}
-
-.contents-1 .contents-02 .contents-02-2 {
-  width: 265px;
-  height: 290px;
-  background-color: black;
-  float: left;
-}
-
-.contents-1 .contents-02 .contents-02-3 {
-  width: 265px;
-  height: 290px;
-  background-color: black;
-  float: left;
-}
-
-.contents-1 .contents-02 .contents-02-4 {
-  width: 265px;
-  height: 290px;
-  background-color: yellow;
-  float: left;
-}
-
-.contents_bottom {
-  border-bottom: 1px solid #ddd;
-}
-
-.contents-2 {
-  width: 1060px;
-  height: 580px;
-}
-
-.contents-2 .contents-03 {
-  width: 530px;
-  height: 580px;
-  float: left;
-}
-.contents-2 .contents-03 .contents-03-1 {
-  width: 265px;
-  height: 290px;
-  float: left;
-}
-.contents-2 .contents-03 .contents-03-2 {
-  width: 265px;
-  height: 290px;
-  float: left;
-}
-.contents-2 .contents-03 .contents-03-3 {
-  width: 265px;
-  height: 290px;
-  float: left;
-}
-.contents-2 .contents-03 .contents-03-4 {
-  width: 265px;
-  height: 290px;
-  float: left;
-}
-
-.contents-2 .contents-04 {
-  width: 530px;
-  height: 580px;
-  background-color: yellow;
-  float: right;
-}
-
-.contents .button_right {
+.rolling_visual .visual_left {
   width: 95px;
-  height: 135px;
-  background-color: yellow;
-  position: absolute;
-  right: -100px;
-  top: 510px;
-}
-
-.activity {
   height: 383px;
-  position: relative;
 }
 
-.activity .button_left {
-  width: 95px;
-  height: 135px;
-  background-color: yellow;
-  position: absolute;
-  top: 120px;
-  left: -100px;
-}
-
-.activity .rolling_visual {
+.rolling_visual .visual_center {
   width: 1060px;
   height: 383px;
-  background-color: black;
 }
 
-.activity .button_right {
+.rolling_visual .visual_right {
   width: 95px;
-  height: 135px;
-  background-color: yellow;
-  position: absolute;
-  top: 0;
-  right: 0;
-  top: 120px;
-  right: -100px;
+  height: 383px;
+}
+
+/* -------------------------------rollingVisual----------------------------- */
+
+/* -------------------------------allProduct----------------------------- */
+
+.allProduct {
+  width: 1060px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.product01 {
+  width: 1060px;
+  height: 550px;
+}
+
+.product01 li {
+  width: 265px;
+  height: 275px;
+  float: left;
+}
+
+.product02 {
+  width: 1060px;
+  height: 275px;
+  overflow: hidden;
+}
+
+.product02 li {
+  width: 265px;
+  height: 275px;
+  float: left;
 }
 
 #hamBtn {
@@ -368,11 +379,11 @@ a {
 }
 
 #hamBtn ~ .product02 {
-  display: none;
+  height: 0;
 }
 
 #hamBtn:checked ~ .product02 {
-  display: block;
+  height: 275px;
 }
 
 #hamBtn ~ .label .openBtn {
@@ -388,125 +399,66 @@ a {
   display: block;
 }
 
-.newarrival {
-  position: relative;
-  width: 1060px;
-  height: 870px;
-}
-
-.newarrival .label {
-  position: absolute;
-  top: -55px;
-  right: 0;
-}
-
-.newarrival .label label {
+.allProduct label {
+  float: left;
   font-size: 30px;
   color: #9b9b9b;
   font-weight: 700;
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
 
-.newarrival .product01 {
-  width: 1060px;
-  height: 550px;
-  background-color: yellow;
-  border-bottom: 1px solid #ddd;
-}
+/* -------------------------------allProduct----------------------------- */
 
-.newarrival .product01 .product01-1 {
-  width: 1060px;
-  height: 275px;
-  background-color: black;
-}
-
-.newarrival .product01 .product01-1 > div {
-  width: 265px;
-  height: 275px;
-  background-color: #ddd;
-  float: left;
-}
-
-.newarrival .product01 .product01-2 {
-  width: 1060px;
-  height: 275px;
-  background-color: black;
-}
-
-.newarrival .product01 .product01-2 > div {
-  width: 265px;
-  height: 275px;
-  background-color: #ddd;
-  float: left;
-}
-
-.newarrival .product02 {
-  width: 1060px;
-  height: 275px;
-}
-
-.newarrival .product02 > div {
-  width: 265px;
-  height: 275px;
-  background-color: #ddd;
-  float: left;
-}
+/* -------------------------bottomFooter----------------------------------- */
 
 .footer {
-  background-color: black;
   width: 100%;
-  position: relative;
+  height: 850px;
+  background-color: black;
 }
 
-.footer .bottombackground01 {
-  background-color: black;
-  width: 500px;
-  height: 803px;
-  position: absolute;
-  left: -500px;
-}
-.footer .bottombackground02 {
-  background-color: black;
-  width: 490px;
-  height: 803px;
-  position: absolute;
-  right: -420px;
-}
-
-.footer .bottomTop {
-  color: white;
-  display: flex;
-  margin: 0 auto;
+.footer .bottomFooter {
   width: 1060px;
-  padding: 30px 0;
+  margin: 0 auto;
 }
 
-.footer .bottomTop ul {
-  margin: 0 50px;
+.footer .footerTop {
+  width: 1060px;
+  height: 360px;
 }
 
-.footer .bottomTop ul li {
-  font-size: 11px;
-  line-height: 30px;
+.footer .footerTop .title {
+  width: 212px;
+  height: 200px;
+  float: left;
+  padding: 50px 0;
+}
+
+.footer .footerTop .title strong {
+  color: white;
+}
+
+.footer .footerTop .title li {
+  margin: 17px 0;
+  font-size: 12px;
   color: #9b9b9b;
 }
 
-.footer .bottomTop ul strong {
-  color: white;
-}
-
-.bottommiddle {
+.footercenter {
   margin: 0 auto;
   width: 1060px;
-  height: 200px;
+  height: 140px;
 }
 
-.bottommiddle .storelocation {
+.footercenter .storelocation {
   width: 530px;
   height: 150px;
   float: left;
 }
 
-.bottommiddle .storelocation .storelocation-01 {
+.footercenter .storelocation .storelocation-01 {
   width: 200px;
   height: 60px;
   margin: 0 auto;
@@ -515,7 +467,7 @@ a {
   color: white;
 }
 
-.bottommiddle .storelocation .storesearch {
+.footercenter .storelocation .storesearch {
   width: 200px;
   height: 50px;
   background-color: red;
@@ -527,13 +479,13 @@ a {
   letter-spacing: 0.05em;
 }
 
-.bottommiddle .sns {
+.footercenter .sns {
   width: 530px;
   height: 150px;
   float: left;
 }
 
-.bottommiddle .sns .follow {
+.footercenter .sns .follow {
   width: 250px;
   height: 60px;
   margin: 0 auto;
@@ -542,33 +494,33 @@ a {
   color: white;
 }
 
-.bottommiddle .sns .sns-01 {
+.footercenter .sns .sns-01 {
   width: 350px;
   height: 50px;
   margin: 0 auto;
 }
 
-.bottommiddle .sns .sns-01 img {
+.footercenter .sns .sns-01 img {
   float: left;
   padding: 0 10px;
 }
 
-.bottomFooter {
-  margin: 0 auto;
+.footerbottom {
+  margin: 40px auto;
   width: 1060px;
-  height: 300px;
+  height: 250px;
 }
 
-.bottomFooter > div {
+.footerbottom > div {
   float: left;
 }
 
-.bottomFooter .bottomFooter_left {
+.footerbottom .bottomFooter_left {
   width: 530px;
   height: 300px;
 }
 
-.bottomFooter .bottomFooter_left .left_top {
+.footerbottom .bottomFooter_left .left_top {
   font-size: 12px;
   color: #9b9b9b;
   width: 530px;
@@ -576,30 +528,30 @@ a {
   line-height: 20px;
 }
 
-.bottomFooter .bottomFooter_left .left_top strong {
+.footerbottom .bottomFooter_left .left_top strong {
   color: white;
 }
 
-.bottomFooter .bottomFooter_left .left_bottom {
+.footerbottom .bottomFooter_left .left_bottom {
   width: 530px;
   height: 100px;
 }
 
-.bottomFooter .bottomFooter_left .left_bottom div {
+.footerbottom .bottomFooter_left .left_bottom div {
   float: left;
 }
 
-.bottomFooter .bottomFooter_left .left_bottom .bottom_logo {
+.footerbottom .bottomFooter_left .left_bottom .bottom_logo {
   width: 50px;
   height: 50px;
   overflow: hidden;
 }
 
-.bottomFooter .bottomFooter_left .left_bottom .bottom_logo img {
+.footerbottom .bottomFooter_left .left_bottom .bottom_logo img {
   width: 100%;
 }
 
-.bottomFooter .bottomFooter_left .left_bottom .copyright {
+.footerbottom .bottomFooter_left .left_bottom .copyright {
   width: 450px;
   height: 50px;
   margin-left: 30px;
@@ -608,16 +560,16 @@ a {
   line-height: 20px;
 }
 
-.bottomFooter .bottomFooter_left .left_bottom .copyright strong {
+.footerbottom .bottomFooter_left .left_bottom .copyright strong {
   color: white;
 }
 
-.bottomFooter .bottomFooter_right {
+.footerbottom .bottomFooter_right {
   width: 530px;
   height: 300px;
 }
 
-.bottomFooter .bottomFooter_right .right {
+.footerbottom .bottomFooter_right .right {
   width: 400px;
   height: 300px;
   margin: 0 auto;
@@ -626,6 +578,8 @@ a {
   line-height: 20px;
 }
 
-.bottomFooter .bottomFooter_right .right strong {
+.footerbottom .bottomFooter_right .right strong {
   color: white;
 }
+
+/* -------------------------bottomFooter----------------------------------- */
