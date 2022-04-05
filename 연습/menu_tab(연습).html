@@ -18,6 +18,7 @@
             display: none;
         }
 
+
         #tab01:checked~.sheet .sheet01 {
             display: block;
         }
@@ -28,6 +29,21 @@
 
         #tab03:checked~.sheet .sheet03 {
             display: block;
+        }
+
+        #tab01:checked~.label .lab01 {
+            background-color: yellow;
+            color: black;
+        }
+
+        #tab02:checked~.label .lab02 {
+            background-color: yellow;
+            color: black;
+        }
+
+        #tab03:checked~.label .lab03 {
+            background-color: yellow;
+            color: black;
         }
 
         .label {
@@ -63,6 +79,7 @@
         <input type="radio" id="tab01" name="radio" checked>
         <input type="radio" id="tab02" name="radio">
         <input type="radio" id="tab03" name="radio">
+
         <div class="label">
             <label for="tab01" class="lab01">공지사항</label>
             <label for="tab02" class="lab02">Q&A</label>
@@ -74,9 +91,7 @@
             <div class="sheet02">sheet02</div>
             <div class="sheet03">sheet03</div>
         </div>
-
     </section>
-
 </body>
 
 </html>

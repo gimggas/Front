@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ham_button_menu</title>
     <style>
         * {
             margin: 0;
@@ -24,20 +24,20 @@
             height: 400px;
         }
 
-        #hamBtn:checked~.lnb .closeBtn {
-            display: block;
-        }
-
-        #hamBtn:checked~.lnb .openBtn {
-            display: none;
-        }
-
         #hamBtn~.lnb .openBtn {
             display: block;
         }
 
         #hamBtn~.lnb .closeBtn {
             display: none;
+        }
+
+        #hamBtn:checked~.lnb .openBtn {
+            display: none;
+        }
+
+        #hamBtn:checked~.lnb .closeBtn {
+            display: block;
         }
 
         .lnb {}
@@ -52,12 +52,18 @@
             line-height: 50px;
         }
 
+        .lnb ul {
+            width: 1000px;
+            height: 50px;
+            float: left;
+        }
+
         .lnb li {
             width: 200px;
             height: 50px;
             display: block;
             float: left;
-            background: black;
+            background-color: black;
             color: white;
             text-align: center;
             line-height: 50px;
@@ -77,6 +83,7 @@
 </head>
 
 <body>
+
     <input type="checkbox" id="hamBtn">
 
     <nav class="lnb">
