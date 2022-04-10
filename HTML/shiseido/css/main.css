@@ -1,0 +1,327 @@
+* {margin: 0; padding: 0;
+}
+
+li {list-style: none;}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+header {
+    width: 100%;
+    height: 180px;
+
+}
+
+.gnbBox {
+    width: 100%;
+    background-color: black;
+    height: 30px;
+}
+
+.gnbBox .gnb {
+    width: 1000px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.gnbBox .gnb ul {
+    float: right;
+}
+
+.gnbBox .gnb li {
+    float: left;
+    margin-left: 30px;
+    color:white;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+.logoBox {
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.logoBox .logo {
+    width: 300px;
+    height: 84px;
+    margin: 10px auto;
+    background-color: red;
+}
+
+
+.lnbBox {
+    width: 1000px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.lnbBox ul li {
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: 800;
+}
+
+.lnbBox ul .before {
+    width: 600px;
+    float: left;
+}
+
+.lnbBox ul .after {
+    float: left;
+    width: 230px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.lnbBox ul .search {
+    float: left;
+    width: 130px;
+    height: 20px;
+    margin-left: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    border: 1px solid #ddd;
+}
+.lnbBox ul .search i {
+    float: right;
+    line-height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.visualMain {
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.visualMain img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.rollingBanner {
+    width: 100%;
+    max-width: 1320px;
+    min-width: 1024px;
+    margin: 0 auto;
+}
+
+.rollingBanner img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.titleBox {
+    width: 1000px;
+    height: 60px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.titleBox .bar {
+    width: 350px;
+    height: 60px;
+    float: left;
+}
+
+.titleBox .bar img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.titleBox h3 {
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    float: left;
+}
+
+
+.event {
+    width: 920px;
+    height: 220px;
+    overflow: hidden;
+    margin: 10px auto;
+    /* height쓰면 overflow 생략가능  */
+}
+
+.event .eve {
+    width: 300px;
+    height: 220px;
+    /* 박스자식이라서 생략가능 */
+    float: left;
+}
+
+.event .eve div {
+    width: 100%;
+    /* 박스자식이라서 생략가능 */
+    height: 160px;
+}
+
+.event div:nth-child(2) {
+    margin: 0 10px;
+}
+
+.event .eve div img {
+    width: 100%;
+    height: auto;
+    /* width에 맞춰서 height 조절
+       생략가능 */
+}
+
+.event .eve p {
+    width: 100%;
+    /* 박스자식이라서 생략가능 */
+    height: 60px;
+    font-weight: bold;
+    line-height: 60px;
+}
+/* --------------event----------------------- */
+/* --------------product----------------------- */
+
+.product {
+    width: 920px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.product .pro {
+    float: left;
+    width: 176px;
+    height: 500px;
+    margin-right: 10px;
+}
+
+.product .pro:last-child {
+    margin-right: 0;
+}
+
+.product .pro p {
+    width: 176px;
+    height: 150px;
+    text-align: center;
+}
+
+
+/* --------------product----------------------- */
+/* 
+--------------banner----------------------- */
+
+
+.banner {
+    width: 920px;
+    height: 280px;
+    margin: 40px auto;
+}
+
+.banner .ban {
+    width: 293px;
+    height: 280px;
+    float: left;
+    margin-right:20px;
+}
+
+.banner .ban:last-child {
+    margin-right: 0;
+}
+
+.banner .ban .img01 {
+    width: 293px;
+    height: 160px;
+    margin-bottom: 20px;
+}
+
+.banner .ban .img01 img {
+    width: 100%;
+    height: 160px;
+}
+
+.banner .ban .img02 {
+    width: 293px;
+    height: 100px;
+}
+
+.banner .ban .img02 img {
+    width: 100%;
+    height: 100px;
+}
+
+
+/* --------------banner----------------------- */
+
+.footerTop {
+    width: 100%;
+    height: 20px;
+    padding: 10px 0;
+    background-color: black;
+}
+
+.footerTop .container {
+    width: 920px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.footerTop .container ul {
+    float: left;
+}
+
+.footerTop .container ul li {
+    height: 20px;
+    float: left;
+    color:white;
+    margin-right: 15px;
+    padding: 0 10px 0 0;
+    border-right: 1px solid white;
+}
+
+.footerTop .container .footerTop_left li:nth-child(4),
+.footerTop .container .footerTop_right li:nth-child(2) {
+    border-right: 0;
+}
+
+
+
+.footerTop .container .footerTop_right {
+    float: right;
+}
+
+.footerBottom {
+    width: 100%;
+    height: 30px;
+    background-color: red;
+}
+
+.footerBottom .container {
+    width: 920px;
+    height: 30px;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+.footerBottom .container div {
+    float: left;
+    color: white;
+}
+
+.footerBottom .container .footerBottom_right {
+    float: right;
+}
