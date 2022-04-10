@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.gnbBox {
+  width: 1070px;
+  height: 40px;
+  margin: 0 auto;
+  background-color: yellow;
+}
+
+.gnbBox ul {
+  float: right;
+}
+
+.gnbBox ul li {
+  float: left;
+}
+
+.outerHeader {
+  width: 100%;
+}
+
+.innerHeader {
+  width: 1070px;
+  margin: 0 auto;
+}
+
+.navBox {
+  width: 1070px;
+  height: 100px;
+  background-color: red;
+}
+
+.navBox .logo {
+  width: 180px;
+  height: 60px;
+  background-color: black;
+  margin: 0 auto;
+}
+
+.lnbBox {
+  width: 100%;
+  height: 30px;
+}
+
+.menu {
+  width: 1070px;
+  margin: 0 auto;
+  background-color: green;
+}
+
+.menu .float {
+  float: left;
+}
+
+.menu ul li {
+  float: left;
+}
+
+.menu .full_down {
+  width: 120px;
+  height: 30px;
+  background-color: yellow;
+}
+
+.menu .lnb {
+  width: 600px;
+  height: 30px;
+  background-color: red;
+}
+
+.menu .right {
+  width: 350px;
+  height: 30px;
+  background-color: blue;
+}
+
+#hamBtn {
+  display: none;
+}
+
+#hamBtn ~ .full_down .list {
+  display: none;
+}
+#hamBtn:checked ~ .full_down .list {
+  display: block;
+}
+
+#hamBtn ~ .full_down .openBtn {
+  display: block;
+}
+#hamBtn ~ .full_down .closeBtn {
+  display: none;
+}
+#hamBtn:checked ~ .full_down .openBtn {
+  display: none;
+}
+#hamBtn:checked ~ .full_down .closeBtn {
+  display: block;
+}
+
+.full_down i {
+  float: left;
+}
+
+.full_down .list {
+  width: 1050px;
+  height: 400px;
+  background-color: yellow;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 400px;
+}
+/* ---------outerHeader-------------- */
+/* ---------visual-------------- */
+.visual {
+  width: 100%;
+  height: 370px;
+  background-color: green;
+}
+
+/* ---------visual-------------- */
+/* ---------product-------------- */
+
+.product {
+  width: 100%;
+  margin: 40px 0;
+}
+
+.container {
+  width: 1070px;
+  margin: 0 auto;
+}
+
+.container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container > div {
+  width: 1070px;
+  height: 400px;
+}
+
+.container .product1 {
+  margin-bottom: 10px;
+}
+
+.container > div > div {
+  width: 260px;
+  height: 400px;
+  float: left;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.container > div > div:last-child {
+  margin-right: 0;
+}
+
+.container > div > div .img {
+  width: 260px;
+  height: 260px;
+  background-color: blue;
+}
+
+.container .etc {
+  height: 30px;
+  font-size: 11px;
+  padding: 0 5px;
+  line-height: 37px;
+}
+
+.container .txt {
+  height: 20px;
+  background-color: white;
+  padding: 10px 5px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.container .price {
+  padding: 0 5px;
+  color: skyblue;
+  font-weight: 600;
+}
+/* ---------product-------------- */
+
+/* ---------banner-------------- */
+.banner {
+  width: 100%;
+  margin-bottom: ;
+}
+/* ---------banner-------------- */
+/* ---------new-------------- */
+
+.new {
+  width: 100%;
+}
+
+.container01 {
+  width: 1070px;
+  height: 395px;
+  margin: 50px auto;
+}
+
+.container01 h3 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.container01 > div {
+  width: 350px;
+  height: 345px;
+  background-color: green;
+  float: left;
+  margin-right: 10px;
+}
+
+.container01 > div img {
+  width: 100%;
+  height: auto;
+}
+
+.container01 > div:last-child {
+  margin-right: 0;
+}
+
+.box {
+  position: relative;
+  overflow: hidden;
+}
+
+.box01 {
+  width: 350px;
+  height: 345px;
+  position: absolute;
+  left: 0;
+  bottom: -345px;
+  transition: bottom 0.2s, color 0.2s 0.3s;
+}
+
+.box01 img {
+  width: 100%;
+}
+
+.box:hover .box01 {
+  bottom: 0;
+}
+
+/* ---------new-------------- */
+/* ---------recipe-------------- */
+.recipe {
+  width: 100%;
+}
+
+/* ---------recipe-------------- */
