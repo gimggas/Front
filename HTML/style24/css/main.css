@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+img {
+  display: block;
+}
+
+.header {
+  width: 100%;
+  height: 119px;
+}
+
+.header img {
+  width: 100%;
+}
+
+.content_body {
+  width: 100%;
+  height: 490px;
+  overflow: hidden;
+}
+
+.content_body .content_body01 {
+  width: 1160px;
+  height: 100px;
+  margin: 0 auto;
+}
+.content_body .content_body01 img {
+  width: 100%;
+}
+
+.contentmain {
+  width: 100%;
+}
+
+.contentmain .contentmain_trendy {
+  width: 1160px;
+  height: 580px;
+  margin: 0 auto;
+}
+
+.contentmain .contentmain_trendy img {
+  width: 100%;
+}
+
+.contentmain_it {
+  width: 100%;
+}
+
+.contentmain_it .contentmain_it-01 {
+  margin: 0 auto;
+  width: 1160px;
+  height: 600px;
+}
+
+.contentmain_it .contentmain_it-01 img {
+  width: 100%;
+  height: auto;
+}
+
+.contentmain_pick {
+  width: 100%;
+}
+
+.contentmain_pick .contentmain_pick-01 {
+  margin: 0 auto;
+  width: 1160px;
+  height: 630px;
+}
+
+.contentmain_pick .contentmain_pick-01 img {
+  width: 100%;
+}
+
+.contentmain_recomm {
+  width: 100%;
+}
+
+.contentmain_recomm .contentmain_recomm-01 {
+  margin: 30px auto;
+  width: 1160px;
+  height: 700px;
+}
+
+.contentmain_recomm .contentmain_recomm-01 img {
+  width: 100%;
+}
+
+.contentmain_foryou {
+  width: 100%;
+}
+
+.contentmain_foryou .contentmain_foryou-01 {
+  margin: 0 auto;
+  width: 1160px;
+  height: 560px;
+}
+
+.contentmain_foryou .contentmain_foryou-01 img {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+}
+
+footer img {
+  width: 100%;
+}
